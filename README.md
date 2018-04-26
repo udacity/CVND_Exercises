@@ -93,7 +93,7 @@ cd CVND_Exercises
 
 6. Install a few required pip packages, which are specified in the requirements text file (including OpenCV).
 ```
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 7. That's it!
