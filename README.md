@@ -15,8 +15,9 @@ for Python programs but can package and distribute any software.
 Using Anaconda consists of the following:
 
 1. Install [`miniconda`](http://conda.pydata.org/miniconda.html) on your computer. If you already have `conda` or `miniconda` installed, you should be able to skip this step and move on to step 2.
-2. Create a new `conda` [environment](http://conda.pydata.org/docs/using/envs.html) using the files in this repository.
-3. Each time you wish to work on any exercises, activate your `conda` environment!
+2. Create and activate * a new `conda` [environment](http://conda.pydata.org/docs/using/envs.html).
+
+* Each time you wish to work on any exercises, activate your `conda` environment!
 
 ---
 
@@ -43,66 +44,75 @@ Using Anaconda consists of the following:
 - **Mac:** http://conda.pydata.org/docs/install/quick.html#os-x-miniconda-install
 - **Windows:** http://conda.pydata.org/docs/install/quick.html#windows-miniconda-install
 
-## 2. Create the Environment
+## 2. Create and Activate the Environment
 
-**Setup** the `cv-nd` environment. 
-
-```sh
+1. Clone the repository, and navigate to the downloaded folder. This may take a minute or two to clone due to the included image data.
+```
 git clone https://github.com/udacity/CVND_Exercises.git
 cd CVND_Exercises
 ```
 
-If you are on Windows, **rename**   
-`meta_windows_patch.yaml` to   
-`meta.yaml`
+2. Create (and activate) a new environment, named `cv-nd` with Python 3.6. If prompted to proceed with the install `(Proceed [y]/n)` type y.
 
-**Create** cv-nd.  Running the command below will create a new `conda` environment that has all libraries you need to be successful in this program. This step may take a while, since you the environment is installing all the necessary packages.
+	- __Linux__ or __Mac__: 
+	```
+	conda create -n cv-nd python=3.6
+	source activate cv-nd
+	```
+	- __Windows__: 
+	```
+	conda create --name cv-nd python=3.6
+	activate cv-nd
+	```
+	
+	At this point your command line should look something like: `(cv-nd) <User>:CVND_Exercises <user>$`. The `(cv-nd)` indicates that your environment has been activated, and you can proceed with further package installations.
+
+3. Install PyTorch and torchvision; this should install the latest version of PyTorch.
+	
+	- __Linux__ or __Mac__: 
+	```
+	conda install pytorch torchvision -c pytorch 
+	```
+	- __Windows__: 
+	```
+	conda install -c peterjc123 pytorch-cpu
+	pip install torchvision
+	```
+
+6. Install a few required pip packages, which are specified in the requirements text file (including OpenCV).
 ```
-conda env create -f environment.yaml
+pip3 install -r requirements.txt
 ```
 
-**Verify** that the cv-nd environment was created in your environments:
+7. That's it!
 
-```sh
+Now all of the `cv-nd` libraries are available to you. Assuming you're environment is still activated, you can navigate to the Exercises repo and start looking at the notebooks:
+
+```
+cd
+cd CVND_Exercises
+jupyter notebook
+```
+
+To exit the environment when you have completed your work session, simply close the terminal window.
+
+
+### Notes on environment creation and deletion
+
+**Verify** that the `cv-nd` environment was created in your environments:
+
+```
 conda info --envs
 ```
 
 **Cleanup** downloaded libraries (remove tarballs, zip files, etc):
 
-```sh
+```
 conda clean -tp
 ```
 
-### Uninstalling 
+**Uninstall** the environment (if you want); you can remove it by name:
 
-If you ever want to uninstall the environment, you can remove it by name:
-
-```sh
+```
 conda env remove -n cv-nd
 ```
-
-## 3. Use and Activate the Environment
-
-Now that you have created an environment, you will need to activate the environment to use it! This must be done **each** time you begin a new working session i.e. open a new terminal window. 
-
-**Activate** the `cv-nd` environment:
-
-### OS X and Linux
-```sh
-$ source activate cv-nd
-```
-### Windows
-Depending on shell either:
-```sh
-$ source activate cv-nd
-```
-or
-
-```sh
-$ activate cv-nd
-```
-
-That's it. Now all of the `cv-nd` libraries are available to you.
-
-To exit the environment when you have completed your work session, simply close the terminal window.
-
