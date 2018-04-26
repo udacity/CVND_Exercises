@@ -46,7 +46,17 @@ Using Anaconda consists of the following:
 
 ## 2. Create and Activate the Environment
 
-For Windows users, these following commands need to be executed from the **Anaconda prompt** as opposed to a Windows terminal window. For Mac, a normal terminal window will work. This also assumes you have `git` installed for working with Github from a terminal window, but if you do not, you can download that first wit the command `conda install git`. Now, you're ready to create the environment!
+For Windows users, these following commands need to be executed from the **Anaconda prompt** as opposed to a Windows terminal window. For Mac, a normal terminal window will work. 
+
+#### Git and version control
+These instructions also assume you have `git` installed for working with Github from a terminal window, but if you do not, you can download that first with the command:
+```
+conda install git
+```
+
+If you'd like to learn more about version control and using `git` from the command line, take a look at our [free course: Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123).
+
+Now, we're ready to create our local environment!
 
 1. Clone the repository, and navigate to the downloaded folder. This may take a minute or two to clone due to the included image data.
 ```
