@@ -4,7 +4,7 @@ channels:
     - https://conda.anaconda.org/menpo
     - conda-forge
 dependencies:
-    - python==3.5.2
+    - python==3.5.4
     - numpy
     - matplotlib
     - jupyter
@@ -21,7 +21,7 @@ dependencies:
     - ffmpeg
     - imageio=2.1.2
     - pyqt=4.11.4
+    - pytorch=0.3.0
     - torchvision=0.2.0
     - pip:
-        - torch==0.3.0
         - moviepy
