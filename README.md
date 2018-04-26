@@ -17,7 +17,7 @@ Using Anaconda consists of the following:
 1. Install [`miniconda`](http://conda.pydata.org/miniconda.html) on your computer. If you already have `conda` or `miniconda` installed, you should be able to skip this step and move on to step 2.
 2. Create and activate * a new `conda` [environment](http://conda.pydata.org/docs/using/envs.html).
 
-* Each time you wish to work on any exercises, activate your `conda` environment!
+\* Each time you wish to work on any exercises, activate your `conda` environment!
 
 ---
 
@@ -45,6 +45,8 @@ Using Anaconda consists of the following:
 - **Windows:** http://conda.pydata.org/docs/install/quick.html#windows-miniconda-install
 
 ## 2. Create and Activate the Environment
+
+For Windows users, these following commands need to be executed from the **Anaconda prompt** as opposed to a Windows terminal window. For Mac, a normal terminal window will work. This also assumes you have `git` installed for working with Github from a terminal window, but if you do not, you can download that first wit the command `conda install git`. Now, you're ready to create the environment!
 
 1. Clone the repository, and navigate to the downloaded folder. This may take a minute or two to clone due to the included image data.
 ```
