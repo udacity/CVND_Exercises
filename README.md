@@ -56,7 +56,7 @@ conda install git
 
 If you'd like to learn more about version control and using `git` from the command line, take a look at our [free course: Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123).
 
-Now, we're ready to create our local environment!
+**Now, we're ready to create our local environment!**
 
 1. Clone the repository, and navigate to the downloaded folder. This may take a minute or two to clone due to the included image data.
 ```
