@@ -2,8 +2,6 @@
 
 This repository contains code exercises and materials for Udacity's [Computer Vision Nanodegree](https://www.udacity.com/course/computer-vision-nanodegree--nd891) program. It consists of tutorial notebooks that demonstrate, or challenge you to complete, various computer vision applications and techniques. These notebooks depend on a number of software packages to run, and so, we suggest that you create a local environment with these dependencies by following the instructions below.
 
----
-
 # Configure and Manage Your Environment with Anaconda
 
 Per the Anaconda [docs](http://conda.pydata.org/docs):
@@ -22,7 +20,7 @@ Using Anaconda consists of the following:
 
 ---
 
-## Installation
+## 1. Installation
 
 **Download** the latest version of `miniconda` that matches your system.
 
@@ -45,6 +43,8 @@ Using Anaconda consists of the following:
 - **Mac:** http://conda.pydata.org/docs/install/quick.html#os-x-miniconda-install
 - **Windows:** http://conda.pydata.org/docs/install/quick.html#windows-miniconda-install
 
+## 2. Create the Environment
+
 **Setup** the `cv-nd` environment. 
 
 ```sh
@@ -53,8 +53,8 @@ cd CVND_Exercises
 ```
 
 If you are on Windows, **rename**   
-`meta_windows_patch.yml` to   
-`meta.yml`
+`meta_windows_patch.yaml` to   
+`meta.yaml`
 
 **Create** cv-nd.  Running the command below will create a new `conda` environment that has all libraries you need to be successful in this program. This step may take a while, since you the environment is installing all the necessary packages.
 ```
@@ -80,9 +80,8 @@ If you ever want to uninstall the environment, you can remove it by name:
 ```sh
 conda env remove -n cv-nd
 ```
----
 
-## Using Anaconda
+## 3. Use and Activate the Environment
 
 Now that you have created an environment, you will need to activate the environment to use it! This must be done **each** time you begin a new working session i.e. open a new terminal window. 
 
