@@ -87,7 +87,7 @@ cd CVND_Exercises
 	```
 	- __Windows__: 
 	```
-	conda install -c peterjc123 pytorch-cpu
+	conda install pytorch-cpu -c pytorch
 	pip install torchvision
 	```
 
