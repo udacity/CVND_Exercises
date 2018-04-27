@@ -14,7 +14,7 @@ for Python programs but can package and distribute any software.
 ## Overview
 Using Anaconda consists of the following:
 
-1. Install [`miniconda`](http://conda.pydata.org/miniconda.html) on your computer. If you already have `conda` or `miniconda` installed, you should be able to skip this step and move on to step 2.
+1. Install [`miniconda`](http://conda.pydata.org/miniconda.html) on your computer, by selecting the latest Python version for your operating system. If you already have `conda` or `miniconda` installed, you should be able to skip this step and move on to step 2.
 2. Create and activate * a new `conda` [environment](http://conda.pydata.org/docs/using/envs.html).
 
 \* Each time you wish to work on any exercises, activate your `conda` environment!
