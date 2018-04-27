@@ -31,8 +31,8 @@ def load_dataset(image_dir):
             if not im is None:
                 # Append the image, and it's type (red, green, yellow) to the image list
                 im_list.append((im, im_type))
-
-return im_list
+    
+    return im_list
 
 
 
