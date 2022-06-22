@@ -98,7 +98,7 @@ pip install -r requirements.txt
 
 7. That's it!
 
-Now all of the `cv-nd` libraries are available to you. Assuming you're environment is still activated, you can navigate to the Exercises repo and start looking at the notebooks:
+Now all of the `cv-nd` libraries are available to you. Assuming your environment is still activated, you can navigate to the Exercises repo and start looking at the notebooks:
 
 ```
 cd
